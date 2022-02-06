@@ -1,0 +1,12 @@
+GET http://localhost:5000/api/person
+
+###
+
+POST http://localhost:5000/api/person/createPerson
+Content-Type: application/json
+
+{
+    "name": "prem sai vittal",
+    "gender": "male",
+    "phone_number": "7893601589"
+}
