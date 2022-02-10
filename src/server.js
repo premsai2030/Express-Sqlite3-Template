@@ -1,10 +1,10 @@
-const express = require("express");
-const helmet = require("helmet");
-const cors = require("cors");
-const morgan = require("morgan");
-const routes = require("./routes");
-
-require("./config/db").setup();
+import express from 'express';
+import helmet from 'helmet';
+import cors from 'cors';
+import routes from './routes';
+import morgan from 'morgan';
+import Database from './config/db';
+Database.setup();
 class Server {
   constructor() {
     this.app = express();
@@ -23,4 +23,4 @@ class Server {
   }
 }
 
-module.exports = Server;
+export default Server;

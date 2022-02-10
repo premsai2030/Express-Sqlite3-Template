@@ -1,5 +1,5 @@
-const db = require("../config/db").connection();
-
+import Database from "../config/db";
+const db = Database.connection();
 class PersonService {
   constructor() {
     db.run(`
@@ -37,4 +37,4 @@ class PersonService {
   }
 }
 
-module.exports = new PersonService();
+export default new PersonService();

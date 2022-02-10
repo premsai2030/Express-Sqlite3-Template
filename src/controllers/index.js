@@ -1,5 +1,7 @@
-const personController = require("./person.controller");
+import personController from "./person.controller";
 
-module.exports = {
+const controllers = {
   personController,
 };
+
+export default controllers;

@@ -1,4 +1,5 @@
-const person = require("./person.route");
+import person from "./person.route";
 
 const routes = new Map([["/api/person", person]]);
-module.exports = routes;
+
+export default routes;

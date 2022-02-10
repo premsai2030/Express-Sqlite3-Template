@@ -1,5 +1,7 @@
-const personService = require("./person.service");
+import personService from "./person.service";
 
-module.exports = {
+const services = {
   personService,
 };
+
+export default services;
